@@ -1,0 +1,163 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <!-- <link rel="stylesheet" type="text/css" href="css/fontawesome-all.min.css"/> -->
+  <link rel="stylesheet" href="css/fontawesome-all.min.css">
+  <link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+<!--
+    整个文档的Div容器
+-->
+<div id="resume-framework">
+  <!--
+      base-info指基础信息，包括头像，姓名，邮箱，电话，链接等
+  -->
+  <div id="base-info-wrapper">
+    <!-- 可以通过调整base.css中的#base-info的width来使顶部居中，例如60% -->
+    <div id="base-info">
+      <!-- 头像 -->
+      <img id="avatar" alt="avatar" src="imgs/avatar.jpg"/>
+      <!-- 其他基础信息 -->
+      <div id="base-info-span">
+        <b id="name">史鹏齐</b>
+        <hr>
+        <span>
+              <!-- 可以从font-awesome网站(https://fontawesome.com/icons)中搜索所需图标，
+              直接替换<i>标签class内内容即可 -->
+              <h5>
+                  <i class="fas fa-envelope"></i> 104604657@qq.com |
+                  <i class="fas fa-phone"></i> 156-7095-3622</h5>
+              <h5>
+                  <i class="fab fa-github"></i> <a href="https://github.com/shipengqi" target="_blank">github.com/shipengqi</a> | <i class="fab fa-weixin"></i> 15670953622</h5>
+              <h5>
+                  <i class="fab fa-blogger"></i> <a href="https://www.shipengqi.top" target="_blank">www.shipengqi.top</a> |
+                  求职意向: 前端开发，全栈开发</h5>
+            </span>
+      </div> <!-- end base-info-span -->
+    </div> <!-- end base-info -->
+  </div> <!-- base-info-wrapper -->
+  <div style="clear: both;"></div>
+  <!--
+      个人简介部分
+  -->
+  <div id="summary">
+    <div class="banner-div">
+          <span class="banner-span">
+              <i class="white-icon fas fa-user"></i>&nbsp;个人简介
+          </span>
+    </div> <!-- end banner-div -->
+    <!-- 个人简介可替换部分 -->
+    <p>三年 Node.js 全栈开发经验（偏Node后端），作为主力工程师参与设计与开发过多个项目，负责系统核心模块的开发。<b>熟悉 HTTP 协议、TCP/IP 协议，</b> 熟悉 <b>Redis，MySQL，MongoDB 数据库</b>，熟悉 Linux 系统开发。有优秀的学习能力和团队沟通能力，经常与团队进行技术分享，能与团队共同成长。</p>
+  </div> <!-- end summary -->
+  <!--
+      技能列表部分
+  -->
+  <div id="skills">
+    <div class="banner-div">
+          <span class="banner-span">
+            <i class="white-icon fas fa-pencil-alt"></i>&nbsp;技能列表
+          </span>
+    </div> <!-- end skills -->
+    <!-- 技能列表可替换部分 &nbsp;用来控制格式-->
+    <ul>
+      <li>
+        <b>后端框架:</b> Koa, Express, sactive-web(自己造的轮子)
+      </li>
+      <li>
+        <b>前端框架:</b> Vue.js, jQuery
+      </li>
+      <li>
+        <b>语言:</b> Javascript, Shell, Go
+      </li>
+      <li>
+        <b>数据库:</b> Redis, MySQL, MongoDB
+      </li>
+      <li>
+        <b>工具:</b> Docker, kubernetes, Git, Nginx
+      </li>
+      <li>
+        <b>外语:</b> 大学英语四级，能流畅阅读英文文档
+      </li>
+    </ul>
+  </div> <!-- end skills -->
+  <!--
+      工作经历部分
+  -->
+  <div id="jobs">
+    <div class="banner-div">
+          <span class="banner-span">
+            <i class="white-icon fas fa-briefcase"></i>&nbsp;工作经历
+          </span>
+    </div>
+    <!-- 第一份工作的介绍 -->
+    <b>Microfocus（原上海惠普软件）</b>
+    <p>2017年4月-至今 | 高级软件开发工程师</p>
+    <ul>
+      <li>作为组长负责设计和开发<b> Bot Framework 平台</b>，<b>与微软 MS Teams 团队合作开发并集成 MS Teams平台</b>，集成多个其他聊天平台<b> Slack，Mattermost，WeChat</b>。集成<b>RASA</b> 自然语言分析。</li>
+      <li>根据需求分析设计方案可行性，对项目代码进行测试优化，协助持续集成与自动化部署，提高系统可用性。</li>
+      <li>负责公司技术文档的编写以及维护，定期 review 团队的代码，与团队共同学习以及成长。</li>
+    </ul>
+    <!-- 第一个项目的介绍，多个项目可以复制project-span区块-->
+    <span class="project-span">
+          <b>Bot Framework 平台</b>
+          <ul>
+            <li>Bot Framework 平台是公司内部的 shared service，为其他团队提供速搭建 chat bot 的能力。</li>
+            <li>基于Koa2 开发封装了<b>依赖注入的 web 框架</b>，提高了整个团队的开发效率。对整个 ChatOps 进行重构，<b>Chat Bot 响应速度快了近一倍 </b>。</li>
+            <li>作为主要工程师设计以及开发<b>ChatOps conversation，ChatOps dashboard，Service Controller，Cache 模块，集成 MicroSoft Teams和 WeChat </b>等主要功能。</li>
+            <li>开发 Bot Framework <b>Docker 和 Kubernetes 版本</b>，实现一键部署。</li>
+          </ul>
+    </span> <!-- end project-span -->
+    <!-- 第一份工作结束 -->
+    <!-- 第二份工作开始 -->
+    <br />
+    <b>本地头条</b>
+    <p>2016年4月-2017年4月 | Node全栈开发</p>
+    <ul>
+      <li>独立开发搭建部署本地头条 CMS 系统1.0。</li>
+      <li>参与设计开发本地头条 CMS 系统2.0微服务架构</li>
+    </ul>
+    <span class="project-span">
+          <b>CMS 系统</b>
+          <ul>
+            <li>使用 Node.js + Bootstrap + Vue 技术栈开发前端加后端服务，数据库使用 Mysql，Redis，MongoDB。</li>
+            <li>作为主要工程师开发了<b>素材管理，主题新闻，爆料新闻，活动模块</b>等主要功能。</li>
+          </ul>
+    </span> <!-- end project-span -->
+    <!-- 第一个项目的介绍，多个项目可以复制project-span区块-->
+    <!-- 第二份工作结束 -->
+    <!-- 第三份工作开始 -->
+    <br />
+    <b>H3C（外包）</b>
+    <p>2015年9月-2016年4月 | Node后端工程师</p>
+    <ul>
+      <li>使用 Node.js 开发华三绿洲云平台。</li>
+      <li>独立设计数据库表结构，独立开发在线诊断服务和云维护服务。</li>
+    </ul>
+    <!-- 第一个项目的介绍，多个项目可以复制project-span区块-->
+    <!-- 第三份工作结束 -->
+  </div> <!-- end jobs -->
+  <!--
+      教育经历部分
+  -->
+  <div id="education">
+    <div class="banner-div">
+      <span class="banner-span"><i class="white-icon fas fa-graduation-cap"></i>&nbsp;教育经历</span>
+    </div>
+    <b>商丘工学院 | 机械自动化 | 2011年- 2015年</b>
+  </div> <!-- end education -->
+  <!--
+      志愿者工作部分
+  -->
+  <div id="volunteer">
+    <div class="banner-div">
+      <span class="banner-span"><i class="white-icon fas fa-ribbon"></i>&nbsp;志愿工作</span>
+    </div>
+    <ul>
+      <li>翻译了几个英文文档。</li>
+      <li>GitHub，NPM 上几个开源项目。</li>
+    </ul>
+  </div> <!-- end education -->
+</div> <!-- end resume-framework -->
+</body>
+</html>
